@@ -13,5 +13,5 @@ RUN chmod -R 777 /myapp
 USER appuser
 ADD https://github.com/hamsyed/myapp.git  /myapp
 #to start nginx use below but make sure CMD /bin/bash /myapp/script.sh is COMMENTED		 
-#ENTRYPOINT [ "nginx", "-g", "daemon off;"
+#ENTRYPOINT ["nginx", "-g", "daemon off;"]
 CMD bash /myapp/script.sh  
